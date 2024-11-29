@@ -5,15 +5,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 import br.com.jeffersondevjava.service.CursoServico;
-import br.com.jeffersondevjava.service.stubs.CursoServiceStubs;
+import br.com.jeffersondevjava.service.stubs.CursoServiceStubsTest;
 
-class CursoNegocioTest {
+class CursoNegocioStubTest {
 
 	@Test
 	void testCursoRelacionadoSpring_Quando_UsamosStub() {
 
 		// Given
-		CursoServico stubServico = new CursoServiceStubs();
+		CursoServico stubServico = new CursoServiceStubsTest();
 		CursoNegocio negocio = new CursoNegocio(stubServico);
 
 		// when
@@ -27,7 +27,7 @@ class CursoNegocioTest {
 	void testCursoRelacionadoSpring_Quado_UsamoFooBarEstudante() {
 
 		// Given
-		CursoServico stubServico = new CursoServiceStubs();
+		CursoServico stubServico = new CursoServiceStubsTest();
 		CursoNegocio negocio = new CursoNegocio(stubServico);
 
 		// when

@@ -5,7 +5,7 @@ import java.util.List;
 
 import br.com.jeffersondevjava.service.CursoServico;
 
-public class CursoServiceStubs implements CursoServico{
+public class CursoServiceStubsTest implements CursoServico{
 
 	public List<String> recuperarCursos(String estudante) {
 		 return Arrays.asList(
